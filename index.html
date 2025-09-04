@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta name="author" content="Nathan Atwood">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="A home page for my Chamber of Commerce Project">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
     <title>Home Page</title>
 </head>
+
 <body>
-    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem perspiciatis debitis ullam perferendis vel quia in maiores, molestias ratione eum nobis mollitia consectetur ab consequuntur vitae, aut et est a.</h1>
-</body>
+    <header>
+        <span>
+            <img src="images/logo.jpg" alt="Logo">Utah Chamber of Commerce
+            <a href="#" id="showOnMobile"><img id="menubutton" src="images/hamburger.svg" alt="Menu Selector"></a>
+        </span>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="aboutme">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, in nemo odio voluptatem laborum ipsam. Esse voluptatem quasi dolorem, veniam autem saepe explicabo corporis! Tempora soluta vero culpa dolor dicta!</p>
+        </section>
+        <section class="studentphoto">
+            <h2>Student Photo</h2>
+            <img src="images/logo.jpg" alt="Nathan Atwood">
+        </section>
+        <section class="classes">
+            <h2>Web Certificate Courses</h2>
+            <button id="all">All</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+        </section>
+        <div id="class"></div>
+    </main>
+    <footer class="footer">
+        <p id="credits">credits</p>
+        <ul class="socials">
+            <li><a href="facebook.com"><img src="images/social-facebook.jpg" alt="Facebook logo"></a></li>
+            <li><a href="instagram.com"><img src="images/social-instagram.jpg" alt="Instagram logo"></a></li>
+            <li><a href="X.com"><img src="images/social-x.jpg" alt="X logo"></a></li>
+        </ul>
+        <div class="date-modified">
+            <p id="current-date">©2025</p>
+            <p id="last-modified">NA</p>
+        </div>
+    </footer>
 </html>
