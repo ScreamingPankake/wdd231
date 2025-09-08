@@ -1,0 +1,33 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    margin: 2rem;    
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#cards section {
+    padding: 1rem;
+    border: 1px solid gray;
+    background-color: lightgray;
+    margin: 1.5rem;
+}
+
+#cards h2, #cards p {
+    text-align: center;
+}
