@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -80,16 +79,32 @@ main {
 
 .main2 {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-gap: 1rem;
     grid-template-rows: 50px repeat(2, 1fr)
 }
 
+.main2 section {
+    background-color: var(--light);
+}
+
+.main2 section h3 {
+    margin-bottom: auto;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+}
+
 h2 {
-    color: white;
+    color: var(--light);
     display: grid;
     grid-template-columns: 1/7;
     grid-template-rows: 1/2;
+}
+
+.weather {
+    padding: 1rem;
+    font-size: 18px;
+    background-color: var(--main);
 }
 
 .events {
@@ -109,6 +124,73 @@ h2 {
 
 .weather-forcast {
     display: grid;
-    grid-template-columns: 1/7;
-    grid-template-rows: 3/4;
+    grid-column: 7/9;
+    grid-row: 2/3;
+    background-color: var(--main);
+}
+
+.weather-for {
+    background-color: var(--main);
+}
+
+.event-card {
+    background-color: var(--main);
+}
+
+
+/* FORM */
+
+.form {
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    padding: 2rem;
+    font-size: 20px;
+}
+
+.form input[type="text"] {
+    margin: 1rem 1rem;
+    height: 50px;
+    width: 100%;
+    padding: 20px 20px;
+    font-size: 18px;
+}
+
+.membership {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.membership input[type="radio"] {
+    appearance: none;
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+    margin-left: 10px;
+}
+
+.membership input[type="radio"]:hover {
+    background-color: lightgray;
+}
+
+.membership input[type="radio"]:checked {
+    background-color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin: 2rem 0;
+}
+
+#submit {
+    width: 50%;
+    margin: auto;
+    height: 50px;
 }

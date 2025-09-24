@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nathan Atwood">
+    <meta name="description" content="A page for my BYU Pathways WDD231 Chamber of commerce project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title">
+    <meta property="og:description">
+    <meta property="og:image">
+    <meta property="og:url">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
+
+    <title>Chamber of Commerce | Nathan Atwood</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="./directory.html"><img src="./images/original-white.png" alt="Chamber of commerce logo"></a>
+            <h1>Utah Chamber of Commerce</h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get" class="form">
+            <label for="First Name">First Name: <input type="text" required name="fname" title="First Name"></label>
+            <label for="Last Name">Last Name: <input type="text" required name="lname" title="Last Name"></label>
+            <label for="Email Adress">Email: <input type="text" required name="email" title="Email Adress"></label>
+            <label for="Phone Number">Phone Number: <input type="text" required name="phonenum" title="Phone Number"></label>
+            <label for="buisness/organization">Business/Organization: <input type="text" required name="org" title="business/organization"></label>
+            Membership
+            <div class="membership">
+                <label for="nonprof">NP: <input type="radio" name="membership" value="nonprof"></label>
+                <label for="bronse">Bronse: <input type="radio" name="membership" value="bronze"></label>
+                <label for="silver">Silver: <input type="radio" name="membership" value="silver"></label>
+                <label for="gold">Gold: <input type="radio" name="membership" value="gold"></label>
+            </div>
+            <label for="description">Business/Organization's Description: <textarea name="description" id="comp_desc" ></textarea></label>
+            <button type="submit" id="submit">Join</button>
+        </form>
+    </main>
+    <footer>
+        <p id="current-date"></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+
+</html>
