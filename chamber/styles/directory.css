@@ -194,3 +194,67 @@ textarea {
     margin: auto;
     height: 50px;
 }
+
+
+/* discover page */
+
+#card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 0;
+}
+
+.utah-card {
+    display: grid;
+    background-color: var(--accent);
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 0 5px 15px;
+    border-radius: 10px;
+}
+
+.card-img {
+    box-shadow: 0 5px 10px;
+    margin-bottom: 10px;
+    justify-self: center;
+    border-radius: 5px;
+}
+
+.card-title {
+    color: black;
+    padding: 2rem;
+}
+
+.card-location {
+    text-align: center;
+}
+
+.figure-card {
+  display: none;
+  border: 2px solid var(--dark);
+  background: #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.figure-card p {
+  color: black;
+}
+
+.figure-card:not(.hidden) {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.clickable:hover {
+  transform: scale(1.03);
+}
