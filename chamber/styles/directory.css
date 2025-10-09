@@ -94,7 +94,7 @@ main {
     border-bottom: 2px solid black;
 }
 
-h2 {
+#home-title {
     color: var(--light);
     display: grid;
     grid-template-columns: 1/7;
