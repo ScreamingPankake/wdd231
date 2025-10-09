@@ -97,8 +97,6 @@ main {
 #home-title {
     color: var(--light);
     display: grid;
-    grid-template-columns: 1/7;
-    grid-template-rows: 1/2;
 }
 
 .weather {
