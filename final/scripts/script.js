@@ -1,5 +1,9 @@
 const cardSpace = document.querySelector('#cardspace');
 
+let fullName;
+let formEmail;
+let phoneNumber;
+
 const hotels = [
   {
     "name": "Amangiri",
@@ -70,3 +74,18 @@ hotels.forEach(element => {
     cardSpace.appendChild(card);
 });
 
+const form = document.querySelector('#form');
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
+const phoneNum = document.querySelector('#phone-num');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = {
+    fullName: name.value.trim(),
+    formEmail: email.value.trim(),
+    phoneNumber: phoneNum.value.trim()
+  };
+  localStorage.setItem("formData", JSON.stringify(formData));
+  window.location.href = "thankyou.html";
+});
