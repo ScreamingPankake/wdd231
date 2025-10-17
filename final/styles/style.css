@@ -215,6 +215,25 @@ form button:hover {
     padding: 3rem;
 }
 
+#homebutton {
+    background-color: var(--primary);
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#homebutton:hover {
+    background-color: black;
+    color: white;
+}
+
+#buttona {
+    text-decoration: none;
+    text-align: center;
+}
 
 @media screen and (min-width: 800px) {
     
