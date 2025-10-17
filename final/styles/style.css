@@ -235,6 +235,26 @@ form button:hover {
     text-align: center;
 }
 
+#container {
+    max-width: 80%;
+    background-color: var(--primary);
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#container div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.7fr 50px;
+    
+}
+
+#container img {
+    width: 40%;
+}
+
+
 @media screen and (min-width: 800px) {
     
     #hero {
@@ -242,3 +262,4 @@ form button:hover {
         margin: auto;
     }
 }
+

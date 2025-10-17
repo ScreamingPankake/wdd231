@@ -1,5 +1,5 @@
 const cardSpace = document.querySelector('#cardspace');
-const footer = document.querySelector('#footer');
+const container = document.querySelector('#container');
 
 let fullName;
 let formEmail;
@@ -60,6 +60,8 @@ hotels.forEach(element => {
     const cardRating = document.createElement('p');
     const cardImage = document.createElement('img');
     const card = document.createElement('div');
+    const cardClick = document.createElement('a');
+    cardClick.href = 'book.html';
 
     cardName.textContent = name;
     cardLocation.textContent = location;
@@ -72,8 +74,17 @@ hotels.forEach(element => {
     card.appendChild(cardLocation);
     card.appendChild(cardRating);
 
-    cardSpace.appendChild(card);
+    cardClick.appendChild(card);
+    cardSpace.appendChild(cardClick);
+
+    cardClick.addEventListener('click', function (e) {
+        e.preventDefault();
+        localStorage.setItem('selectedHotel', JSON.stringify(element));
+        window.location.href = 'book.html';
+    });
 });
+
+
 
 const form = document.querySelector('#form');
 const name = document.querySelector('#name');
@@ -92,6 +103,6 @@ form.addEventListener('submit', (event) => {
 });
 
 
-footerText = footer.createElement('p');
+const footerText = document.createElement('p');
 footerText.textContent = '©Nathan Atwood | 2025';
-footerText.appendChild(footer);
+footer.appendChild(footerText);
