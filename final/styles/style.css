@@ -243,6 +243,10 @@ form button:hover {
     border-radius: 10px;
 }
 
+#container a {
+    text-decoration: none;
+}
+
 #container div {
     display: grid;
     grid-template-columns: 1fr 2fr;
