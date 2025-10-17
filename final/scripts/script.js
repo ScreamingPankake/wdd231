@@ -1,4 +1,5 @@
 const cardSpace = document.querySelector('#cardspace');
+const footer = document.querySelector('#footer');
 
 let fullName;
 let formEmail;
@@ -89,3 +90,8 @@ form.addEventListener('submit', (event) => {
   localStorage.setItem("formData", JSON.stringify(formData));
   window.location.href = "thankyou.html";
 });
+
+
+footerText = footer.createElement('p');
+footerText.textContent = '©Nathan Atwood | 2025';
+footerText.appendChild(footer);

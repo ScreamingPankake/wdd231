@@ -204,3 +204,7 @@ form button:hover {
 #thankyou-message {
     color: black;
 }
+
+#footer {
+    background-color: var(--primary);
+}
