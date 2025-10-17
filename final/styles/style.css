@@ -208,3 +208,17 @@ form button:hover {
 #footer {
     background-color: var(--primary);
 }
+
+#form-thankyou {
+    font-size: 30px;
+    text-align: center;
+    padding: 3rem;
+}
+
+
+@media screen and (max-width: 800) {
+    
+    #cta {
+        bottom: 200px;
+    }
+}
